@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./web/web_app.js",
-    "test": "test"
+    "test": "mocha test/**/*.spec.js"
   },
   "author": "Cassio Hideki Matsumoto",
   "license": "ISC",
@@ -13,6 +13,8 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
   }
 }

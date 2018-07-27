@@ -6,6 +6,6 @@ module.exports = getAnimals = async (type) => {
   }
 
   return Object.keys(animalList).reduce((accumulator, animals) => {
-    return accumulator.concat(animals[animals])
+    return accumulator.concat(animalList[animals])
   }, [])
 }

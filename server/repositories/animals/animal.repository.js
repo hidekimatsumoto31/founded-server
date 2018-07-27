@@ -1,4 +1,4 @@
-const animals = {
+module.exports = {
   shark: [
     'https://founded.media/hiring/photos/sharks/11261840124_dc9ac72bbe_b.jpg',
     'https://founded.media/hiring/photos/sharks/513197047_2f861d56cb_b.jpg',
