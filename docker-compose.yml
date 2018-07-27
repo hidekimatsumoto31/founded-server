@@ -1,0 +1,8 @@
+server:
+  image: node:8
+  command: "bash -c 'npm install & npm start'"
+  volumes:
+    - ./server/:/server
+  working_dir: /server
+  ports:
+    - 3000:3000
