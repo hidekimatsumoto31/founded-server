@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const animalList = require('../../repositories/animals/animal.repository')
 
 module.exports = getAnimals = async (type) => {
@@ -5,7 +6,9 @@ module.exports = getAnimals = async (type) => {
     return animalList[type] || []
   }
 
-  return Object.keys(animalList).reduce((accumulator, animals) => {
+  const animals =  Object.keys(animalList).reduce((accumulator, animals) => {
     return accumulator.concat(animalList[animals])
   }, [])
+
+  return _.shuffle(animals)
 }
