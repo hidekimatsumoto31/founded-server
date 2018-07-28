@@ -13,6 +13,8 @@ class AnimalsController {
       res.status(statusCode).json(error.message)
     }
 
+    res.setHeader('Access-Control-Allow-Origin', '*')
+
     return res.json(result)
   }
 }
